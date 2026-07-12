@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>For My Duggu ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+height:100vh;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(rgba(255,214,224,.55),
+rgba(255,182,193,.55)),
+url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+#home{
+
+text-align:center;
+
+padding:35px;
+
+width:90%;
+
+max-width:700px;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(16px);
+
+border-radius:30px;
+
+box-shadow:
+0 0 35px rgba(255,255,255,.35);
+
+animation:fade 2s;
+
+}
+
+h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:75px;
+
+color:white;
+
+text-shadow:
+
+0 0 15px #ff4f87,
+
+0 0 30px #ff7ba8;
+
+}
+
+h2{
+
+margin-top:15px;
+
+font-size:23px;
+
+font-weight:300;
+
+color:white;
+
+line-height:1.8;
+
+}
+
+button{
+
+margin-top:45px;
+
+padding:18px 45px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:white;
+
+color:#ff3f7d;
+
+font-weight:bold;
+
+transition:.4s;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.25);
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#ff4f87;
+
+color:white;
+
+}
+
+.rose{
+
+position:fixed;
+
+top:-50px;
+
+font-size:28px;
+
+animation:fall linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-100px)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(110vh)
+rotate(360deg);
+
+opacity:.2;
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="home">
+
+<h1>
+For My Duggu ❤️
+</h1>
+
+<h2>
+
+Some people become memories...
+
+But you became my whole world.
+
+🌹
+
+</h2>
+
+<button onclick="openPassword()">
+
+Open My Heart ❤️
+
+</button>
+
+</div>
+<div id="passwordPage" style="display:none;justify-content:center;align-items:center;height:100vh;">
+
+<div style="
+
+width:90%;
+max-width:500px;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:40px;
+
+text-align:center;
+
+box-shadow:0 0 40px rgba(255,255,255,.3);
+
+animation:fade 1.2s;
+
+">
+
+<div style="font-size:70px;">
+🌹
+</div>
+
+<h1 style="font-size:55px;">
+Secret Garden
+</h1>
+
+<p style="
+
+color:white;
+
+margin-top:15px;
+
+line-height:1.8;
+
+font-size:18px;
+
+">
+
+Only one person can unlock my heart...
+
+❤️
+
+</p>
+
+<input
+
+id="password"
+
+type="password"
+
+placeholder="Enter our special password"
+
+style="
+
+margin-top:30px;
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+text-align:center;
+
+"/>
+
+<p id="error"
+
+style="
+
+margin-top:15px;
+
+color:#fff;
+
+display:none;
+
+font-size:16px;
+
+">
+
+❌ Oops...
+That's not our password 🥺
+
+</p>
+
+<button onclick="checkPassword()">
+
+Unlock ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openPassword(){
+
+document.getElementById("home").style.display="none";
+
+document.getElementById("passwordPage").style.display="flex";
+
+}
+
+function checkPassword(){
+
+let pass=document.getElementById("password").value;
+
+if(pass==="1206"){
+
+document.getElementById("passwordPage").style.display="none";
+
+openStory();
+
+}
+
+else{
+
+document.getElementById("error").style.display="block";
+
+}
+
+}
+
+for(let i=0;i<35;i++){
+
+let rose=document.createElement("div");
+
+rose.className="rose";
+
+rose.innerHTML="🌹";
+
+rose.style.left=Math.random()*100+"vw";
+
+rose.style.animationDuration=(6+Math.random()*8)+"s";
+
+rose.style.animationDelay=Math.random()*8+"s";
+
+document.body.appendChild(rose);
+
+}
+
+</script>
+<div id="storyPage" style="display:none;justify-content:center;align-items:center;height:100vh;padding:25px;">
+
+<div style="
+
+width:92%;
+max-width:850px;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+
+padding:45px;
+
+text-align:center;
+
+animation:fade 1.5s;
+
+box-shadow:0 0 40px rgba(255,255,255,.35);
+
+">
+
+<div style="font-size:65px;">
+🌹❤️🌹
+</div>
+
+<h1 style="font-size:60px;margin-top:10px;">
+Our Story...
+</h1>
+
+<p style="
+
+margin-top:25px;
+
+font-size:22px;
+
+line-height:2;
+
+color:white;
+
+">
+
+Every love story is beautiful...
+
+But ours is my favourite.
+
+❤️
+
+</p>
+
+<p style="
+
+margin-top:20px;
+
+font-size:20px;
+
+line-height:2;
+
+color:white;
+
+">
+
+Some people meet by chance...
+
+Some stay because destiny wants them to...
+
+And somehow...
+
+We became each other's home. 🥹❤️
+
+</p>
+
+<div style="
+
+margin-top:35px;
+
+padding:20px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.12);
+
+">
+
+<p style="
+
+font-size:19px;
+
+line-height:2;
+
+color:white;
+
+font-style:italic;
+
+">
+
+"I never knew a random conversation could become my favourite part of every day."
+
+✨
+
+</p>
+
+</div>
+
+<button onclick="openLetter()">
+
+Read My Heart 💌
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openStory(){
+
+document.getElementById("storyPage").style.display="flex";
+
+}
+
+function openLetter(){
+
+document.getElementById("storyPage").style.display="none";
+
+document.getElementById("letterPage").style.display="flex";
+
+}
+
+</script>
+<div id="letterPage" style="display:none;justify-content:center;align-items:center;min-height:100vh;padding:30px;">
+
+<div style="
+
+width:92%;
+max-width:900px;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+
+padding:40px;
+
+box-shadow:0 0 40px rgba(255,255,255,.35);
+
+animation:fade 1.2s;
+
+">
+
+<div style="text-align:center;">
+
+<div style="font-size:55px;">
+🌹💌🌹
+</div>
+
+<h1 style="font-size:58px;">
+To My Dugguuu...
+</h1>
+
+<p style="
+
+color:white;
+
+font-size:18px;
+
+margin-top:10px;
+
+">
+
+Every word below comes straight from my heart...
+
+❤️
+
+</p>
+
+</div>
+
+<div style="
+
+margin-top:35px;
+
+color:white;
+
+font-size:20px;
+
+line-height:2.2;
+
+">
+
+<p>
+
+<b>Dear Dugguuuuu..... ❤️</b>
+
+</p>
+
+<p>
+
+Meko seriously nhi pta chala ki one month kab ho gya apna dono ko...
+
+Starting se 28 se meet lene chalu huva tha...
+
+Us din se hi meko apke liye feelings thi...
+
+Aur hamesha rahegi.
+
+You are God's gift to my life... ❤️
+
+</p>
+
+<p>
+
+Log bolte hai...
+
+"Kuch hi dino me I Love You bol diya?"
+
+Unko kaise bataun...
+
+Kitni baar maine khud ko rokne ki koshish ki...
+
+Kitni baar laga ki shayad apko main pasand hi na hu...
+
+Lekin...
+
+God ke plans humare plans se better hote hain...
+
+Aur jitna door jane ki koshish ki...
+
+Utna hi zyada apke paas aa gayi...
+
+🥹❤️
+
+</p>
+
+<p>
+
+Aur phir...
+
+9 June...
+
+3:28 AM...
+
+❤️
+
+</p>
+
+<p>
+
+The day I finally said...
+
+<b>"I Love You."</b>
+
+</p>
+
+<p>
+
+Aaj bhi yaad hai...
+
+Aapne bola tha...
+
+<b>"Ye prank hai kya?"</b>
+
+😂❤️
+
+Aur phir...
+
+Mujhe mila...
+
+<b>"I Love You Too..."</b>
+
+🥹❤️
+
+</p>
+
+</div>
+
+<div style="text-align:center;">
+
+<button onclick="letterPart2()">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function letterPart2(){
+
+document.getElementById("letterPage").style.display="none";
+
+document.getElementById("letterPage2").style.display="flex";
+
+}
+
+</script>
+<div id="letterPage2" style="display:none;justify-content:center;align-items:center;min-height:100vh;padding:30px;">
+
+<div style="
+width:92%;
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="text-align:center;">
+<div style="font-size:60px;">🌹❤️🌹</div>
+
+<h1 style="font-size:55px;">
+Our Beginning
+</h1>
+</div>
+
+<div style="
+margin-top:30px;
+color:white;
+font-size:20px;
+line-height:2.2;
+">
+
+<p>
+Us din ke baad meri smile ka reason sirf ek tha...
+<b>Tum.</b> ❤️
+</p>
+
+<p>
+Main itni khush thi ki words hi nahi the.
+Sirf ek feeling thi...
+Ki finally mujhe mera insaan mil gaya.
+🥹
+</p>
+
+<p>
+12 June...
+4:10 PM...
+❤️
+</p>
+
+<p>
+The day we officially became
+<b>"Us".</b>
+</p>
+
+<p>
+Ye date sirf calendar ki date nahi hai...
+Ye meri life ka favourite moment hai.
+Main kabhi nahi bhool sakti.
+♾️❤️
+</p>
+
+<p>
+Tum gussa hote ho to lagta hai duniya ruk gayi...
+Aur jab haste ho...
+Lagta hai sab theek ho gaya.
+🥹❤️
+</p>
+
+<p>
+My Babyyyy...
+My Dugguuu...
+My Boo Boo...
+My Betuuuu...
+Aur mere future bachho ke papa...
+🙈❤️
+</p>
+
+<p>
+I know...
+Ye sab thoda filmy lagta hai...
+But meri feelings bilkul real hain.
+Aur hamesha rahengi.
+</p>
+
+</div>
+
+<div style="text-align:center;margin-top:30px;">
+
+<button onclick="openGallery()">
+See My Favourite Person 📸❤️
+</button>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+function openGallery(){
+
+document.getElementById("letterPage2").style.display="none";
+
+document.getElementById("gallery1").style.display="flex";
+
+}
+
+</script>
+<div id="gallery1" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="text-align:center;">
+
+<div style="font-size:60px;">
+📸❤️🌹
+</div>
+
+<h1 style="font-size:55px;">
+My Favourite Person
+</h1>
+
+<p style="
+color:white;
+font-size:20px;
+margin-top:15px;
+line-height:1.8;
+">
+Some pictures are not just pictures...
+They hold my favourite memories with my favourite person ❤️
+</p>
+
+</div>
+
+
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:35px;
+">
+
+
+<div style="
+width:220px;
+height:260px;
+border-radius:25px;
+overflow:hidden;
+background:white;
+padding:10px;
+">
+
+<img src="https://i.ibb.co/ZR6wPMhL/Screenshot-20260711-005433-Telegram-2.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+">
+
+</div>
+
+
+<div style="
+width:220px;
+height:260px;
+border-radius:25px;
+overflow:hidden;
+background:white;
+padding:10px;
+">
+
+<img src="https://i.ibb.co/xSw1tRVm/IMG-20260711-005445-078.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+">
+
+</div>
+
+
+<div style="
+width:220px;
+height:260px;
+border-radius:25px;
+overflow:hidden;
+background:white;
+padding:10px;
+">
+
+<img src="https://i.ibb.co/27HBVSbN/Screenshot-20260711-005435-Telegram-2.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+">
+
+</div>
+
+
+</div>
+
+
+<div style="text-align:center;margin-top:35px;">
+
+<button onclick="openMemories()">
+Our Little Memories ✨
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function openMemories(){
+
+document.getElementById("gallery1").style.display="none";
+
+document.getElementById("letterPage3").style.display="flex";
+
+}
+
+</script> 
+<div id="letterPage3" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="text-align:center;">
+
+<div style="font-size:60px;">
+💌🌹❤️
+</div>
+
+<h1 style="font-size:55px;">
+My Feelings For You
+</h1>
+
+</div>
+
+
+<div style="
+margin-top:30px;
+color:white;
+font-size:20px;
+line-height:2.2;
+">
+
+
+<p>
+Dugguuu... ❤️
+</p>
+
+
+<p>
+Pata hai...
+
+Tumhari ek choti si smile bhi mera pura din acha bana deti hai.
+
+Tumse baat karna,
+tumhari care karna,
+aur tumhare saath apni choti choti khushiyan share karna...
+
+Mere liye bahut special hai. 🥹❤️
+</p>
+
+
+<p>
+Mujhe nahi chahiye ki hum perfect bane...
+
+Bas itna chahti hu ki hum hamesha ek dusre ko samjhe,
+support kare,
+aur saath me grow kare. ❤️
+</p>
+
+
+<p>
+Thank you...
+
+Meri life me aane ke liye,
+meri smile ka reason banne ke liye,
+aur mujhe itna special feel karwane ke liye. 🌹
+</p>
+
+
+<p>
+No matter what happens...
+
+You will always have a very special place in my heart. ❤️♾️
+</p>
+
+
+</div>
+
+
+<div style="text-align:center;margin-top:35px;">
+
+<button onclick="openLetter4()">
+One More Page 💌
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function openLetter3(){
+
+document.getElementById("letterPage2").style.display="none";
+
+document.getElementById("letterPage3").style.display="flex";
+
+}
+
+
+function openLetter4(){
+
+document.getElementById("letterPage3").style.display="none";
+
+document.getElementById("letterPage4").style.display="flex";
+
+}
+
+</script>
+<div id="letterPage4" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+
+<div style="text-align:center;">
+
+<div style="font-size:65px;">
+❤️♾️🌹
+</div>
+
+<h1 style="font-size:55px;">
+Forever Us
+</h1>
+
+</div>
+
+
+<div style="
+margin-top:30px;
+color:white;
+font-size:20px;
+line-height:2.2;
+">
+
+
+<p>
+Dugguuu... ❤️
+</p>
+
+
+<p>
+Aaj bas itna kehna hai...
+
+Thank you for being my happiness,
+my comfort,
+and my favourite person. 🥹❤️
+</p>
+
+
+<p>
+Mujhe nahi pata future me kya hoga...
+
+Lekin ek cheez pata hai...
+
+Main hamesha tumhari khushi,
+tumhari smile,
+aur tumhare liye best banna chahti hu. ❤️
+</p>
+
+
+<p>
+Hamari journey abhi start hui hai...
+
+Aur mujhe umeed hai ki hum bahut saari memories,
+bahut saari smiles,
+aur bahut saare beautiful moments create karenge. ✨
+</p>
+
+
+<p>
+You are not just a chapter of my life...
+
+You are my favourite story. ❤️
+</p>
+
+
+<p style="text-align:center;font-size:25px;">
+I Love You Dugguuu ❤️♾️
+</p>
+
+
+</div>
+
+
+<div style="text-align:center;margin-top:35px;">
+
+<button onclick="openPhotoAfterLetter()">
+Our Memories 📸❤️
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+<div id="photoAfterLetter" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:850px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="font-size:60px;">
+📸❤️
+</div>
+
+<h1 style="font-size:55px;">
+More Little Moments
+</h1>
+
+<p style="
+color:white;
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+">
+Some memories deserve a special place in our story ❤️
+</p>
+
+
+<div style="
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:35px;
+">
+
+
+<div style="
+width:220px;
+height:260px;
+background:white;
+padding:10px;
+border-radius:25px;
+">
+
+<img src="https://i.ibb.co/TMkw3GXG/IMG-20260711-005502-391.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+">
+
+</div>
+
+
+<div style="
+width:220px;
+height:260px;
+background:white;
+padding:10px;
+border-radius:25px;
+">
+
+<img src="https://i.ibb.co/Q740xDkS/IMG-20260711-005506-280.jpg"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+">
+
+</div>
+
+
+</div>
+
+
+<button onclick="openNote()">
+A Little Note 📝❤️
+</button>
+
+
+</div>
+</div>
+
+
+<script>
+
+function openPhotoAfterLetter(){
+
+document.getElementById("letterPage4").style.display="none";
+
+document.getElementById("photoAfterLetter").style.display="flex";
+
+}
+
+</script>
+<div id="notePage" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:850px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="text-align:center;">
+
+<div style="font-size:60px;">
+📝❤️
+</div>
+
+<h1 style="font-size:55px;">
+A Little Note For You
+</h1>
+
+</div>
+
+
+<div style="
+margin-top:30px;
+color:white;
+font-size:20px;
+line-height:2.2;
+">
+
+<p>
+Babyyyy... ❤️
+</p>
+
+<p>
+You don’t know me apka liye kya kya kar sakti hu...
+ye toh bas starting hai.
+</p>
+
+<p>
+But ek thought hamesha rahega...
+ki me apka liye sahi hu na?
+🥹❤️
+</p>
+
+<p>
+Aaj special hai apna dono ka liye...
+toh bas is moment ko enjoy karte hai.
+</p>
+
+<p>
+Aur abhi toh picture baki hai mera boo boo... ❤️
+</p>
+
+<p>
+Ye toh bas starting thi...
+</p>
+
+<p>
+Bas promise karo sab kuch ekdum shanti se dekhoge.
+🥹🫶🏻
+</p>
+
+<p>
+And yes...
+I miss you a lot and I love you a lot my babyyyy ❤️🫶🏻
+</p>
+
+<p>
+I am always there for you...
+night me bhi okyyy 🧿❤️
+</p>
+
+</div>
+
+<div style="text-align:center;margin-top:35px;">
+
+<button onclick="openSong()">
+A Special Song For You 🎵❤️
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+function openNote(){
+
+document.getElementById("photoAfterLetter").style.display="none";
+
+document.getElementById("notePage").style.display="flex";
+
+}
+
+</script>
+<div id="songPage" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:850px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+">
+
+<div style="font-size:65px;">
+🎵❤️🎧
+</div>
+
+<h1 style="font-size:55px;">
+Our Special Song
+</h1>
+
+<p style="
+color:white;
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+">
+Some songs are not just songs...
+They become a memory of two hearts ❤️
+</p>
+
+
+<div style="
+margin-top:35px;
+padding:25px;
+border-radius:25px;
+background:rgba(255,255,255,.12);
+">
+
+<h2 style="
+color:white;
+font-size:30px;
+<div style="
+margin-top:35px;
+padding:25px;
+border-radius:25px;
+background:rgba(255,255,255,.12);
+">
+
+<p style="
+color:white;
+font-size:22px;
+margin-bottom:20px;
+line-height:1.8;
+">
+🎧 Put your earphones on, close your eyes for a moment...<br>
+This one is only for you. ❤️
+</p>
+
+<audio controls style="
+width:100%;
+margin-top:10px;
+">
+<source src="https://files.catbox.moe/x0kdqu.m4a" type="audio/mp4">
+Your browser does not support the audio element.
+</audio>
+
+<p style="
+margin-top:20px;
+color:white;
+font-size:18px;
+line-height:1.8;
+">
+This isn't just a recording... ❤️<br>
+It's my heart speaking to you.
+</p>
+
+</div>
+
+
+<button onclick="openCoupons()">
+Little Surprises 🎟️❤️
+</button>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function openSong(){
+
+document.getElementById("notePage").style.display="none";
+
+document.getElementById("songPage").style.display="flex";
+
+}
+
+</script>
+<div id="couponPage" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:40px;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.2s;
+text-align:center;
+">
+
+
+<div style="font-size:65px;">
+🎟️❤️✨
+</div>
+
+
+<h1 style="font-size:55px;">
+Little Surprise Coupons
+</h1>
+
+
+<p style="
+color:white;
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+">
+Use these coupons whenever you want a little extra happiness ❤️
+</p>
+
+
+<div style="
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:35px;
+">
+
+
+<div style="
+background:white;
+border-radius:25px;
+padding:20px;
+width:250px;
+">
+
+<h2>
+😂 Comedy Time
+</h2>
+
+<p>
+Watching comedy together ❤️
+</p>
+
+</div>
+
+
+
+<div style="
+background:white;
+border-radius:25px;
+padding:20px;
+width:250px;
+">
+
+<h2>
+🎁 Lifetime Surprise
+</h2>
+
+<p>
+A surprise that never expires ♾️
+</p>
+
+</div>
+
+
+
+<div style="
+background:white;
+border-radius:25px;
+padding:20px;
+width:250px;
+">
+
+<h2>
+💌 Love Letter
+</h2>
+
+<p>
+Words straight from my heart ❤️
+</p>
+
+</div>
+
+
+
+<div style="
+background:white;
+border-radius:25px;
+padding:20px;
+width:250px;
+">
+
+<h2>
+🎵 Song By Me
+</h2>
+
+<p>
+A special song only for you ❤️
+</p>
+
+</div>
+
+
+
+<div style="
+background:white;
+border-radius:25px;
+padding:20px;
+width:250px;
+">
+
+<h2>
+⏳ My Time
+</h2>
+
+<p>
+A moment only for you ❤️
+</p>
+
+</div>
+
+
+</div>
+
+
+<button onclick="openFinal()">
+Final Surprise 🎁❤️
+</button>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function openCoupons(){
+
+document.getElementById("songPage").style.display="none";
+
+document.getElementById("couponPage").style.display="flex";
+
+}
+
+</script>
+<div id="finalPage" style="
+display:none;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+">
+
+<div style="
+width:92%;
+max-width:850px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:45px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,255,255,.35);
+animation:fade 1.5s;
+">
+
+
+<div style="font-size:75px;">
+🎁❤️🌹
+</div>
+
+
+<h1 style="
+font-size:60px;
+">
+One Last Surprise
+</h1>
+
+
+<div style="
+color:white;
+font-size:21px;
+line-height:2.2;
+margin-top:30px;
+">
+
+
+<p>
+Dugguuu... ❤️
+</p>
+
+
+<p>
+Agar tum yaha tak aaye ho...
+
+toh bas itna yaad rakhna ki ye sab sirf ek surprise nahi tha...
+
+ye meri feelings ka ek chota sa part tha. 🥹❤️
+</p>
+
+
+<p>
+Hamari story abhi khatam nahi hui...
+
+ye toh bas ek beautiful beginning hai. ✨
+</p>
+
+
+<p>
+Thank you for being my favourite person,
+meri smile ka reason,
+aur meri special memory. ❤️
+</p>
+
+
+<p>
+Always keep smiling...
+
+and remember...
+
+someone is always cheering for you. 🧿❤️
+</p>
+
+
+<p style="
+font-size:28px;
+">
+I Love You Dugguuu ❤️♾️
+</p>
+<p style="
+margin-top:25px;
+font-size:18px;
+color:white;
+line-height:1.8;
+font-style:italic;
+">
+
+No matter where life takes us...
+I'll always be thankful that our paths crossed.
+❤️🧿
+
+</p>
+
+
+</div>
+
+
+<div style="font-size:45px;margin-top:25px;">
+❤️❤️❤️
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function openFinal(){
+
+document.getElementById("couponPage").style.display="none";
+
+document.getElementById("finalPage").style.display="flex";
+
+}
+
+</script>
